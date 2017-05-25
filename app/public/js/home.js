@@ -88,7 +88,7 @@ $(document).ready(function(){
 											for(var j=0; j < data[i].comments.length; j++){
 												html += '<div class="div-single-comment">';
 													html += '<span class = "comment-author">'+data[i].comments[j].author+': </span>';
-													html += '<span class="comment-content">'+data[i].comments[j].comment+'</span>';
+													html += '<span class="comment-content">'+data[i]. $('<p/>').html(comments[j].comment).text()+'</span>';
 												html += '</div>';
 											}
 										}
